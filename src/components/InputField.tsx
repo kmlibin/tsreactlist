@@ -1,16 +1,34 @@
-import React from 'react'
+import React, { useRef } from "react";
 
 //styles
-import './styles.css'
+import "./styles.css";
 
-export const InputField = () => {
-  return (
-    <form className = "input">
-        <input type = "input" placeholder="Enter a Task" className= "inputBox" />
-        <button className="inputSubmit" type="submit">
-            Go
-        </button>
-
-    </form>
-  )
+interface Props {
+  todo: string;
+  setTodo: React.Dispatch<React.SetStateAction<string>>;
+  handleAdd: (e: React.FormEvent) => void;
 }
+export const InputField = ({ todo, setTodo, handleAdd }: Props) => {
+  const inputRef = useRef<HTMLInputElement>(null);
+  return (
+    <form
+      className="input"
+      onSubmit={(e) => {
+        handleAdd(e);
+        inputRef.current?.blur();
+      }}
+    >
+      <input
+        ref={inputRef}
+        type="input"
+        value={todo}
+        onChange={(e) => setTodo(e.target.value)}
+        placeholder="Enter a Task"
+        className="inputBox"
+      />
+      <button className="inputSubmit" type="submit">
+        Go
+      </button>
+    </form>
+  );
+};
