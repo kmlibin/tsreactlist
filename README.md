@@ -1,46 +1,24 @@
-# Getting Started with Create React App
+# Task Site with TypeScript
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a quick React page to store a basic todo list...you can add todos, edit them, delete them, or mark them as complete. You can also drag and drop the todos from one column to another (i.e, from "Active Tasks" to "Completed Tasks"), or drag and drop in order to rearrange.
 
-## Available Scripts
+The goal was to learn basic TypeScript functionality in a React App.
 
-In the project directory, you can run:
 
-### `npm start`
+### Languages / Libraries / Tools
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+React, TypeScript, JavaScript, CSS, HTML
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+React Icons, Google Fonts, React Beautiful Drag and Drop
 
-### `npm test`
+### Project Highlights
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+As mentioned, this project was simple and helpful to learn basic functionality of TypeScript in React. There aren't any huge highlights, except the drag and drop functionality is pretty cool. 
 
-### `npm run build`
+    
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### What I learned / Challenges
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+This is my first formal code-along video - I've taken courses and done projects where there are parts (sometimes significant) of code-along, or there are  "answers" to be found nearby, but this was just 100% code-along in order to  learn TS in React. I enjoyed it quite a bit, actually, because I am a visual learner; watching someone go through it just made sense to me and was what I wanted for a TS intro. 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+As you may guess, I learned the basics of how to incorporate TypeScript into React. I also really liked the drag and drop library, although I did have to stare at the documentation for awhile and look around for some troubleshooting (there was an issue with react v. 18). I am curious though about how this developer shared state; although there wasn't necessarily prop drilling, I was under the impression that sharing state around SO much between the components might not be the best way to accomplish something like this. I would have thought that using context would be a better, cleaner way to give props access to state. 
